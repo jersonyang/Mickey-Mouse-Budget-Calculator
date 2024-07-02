@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+      <!-- import bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body class="calc-page">
+   <!---Navigation bar --->
+   <nav class="navbar-calc">
+     <a class="navbar-calc" href="/index">Home</a>
+     <a class="navbar-calc" href="/calc">Calculator (you are here)</a>
+     <a class="navbar-calc" href="/socialgood">Social Good</a>
+     <a class="navbar-calc" href="/about">About</a>
+   </nav>
+    <!-- End of nav bar -->
+      
+      <div class="calculator-head">
+        <h1 class="prompt" id="calc-title">Monthly Calculator</h1>
+        <h4 class="prompt">Welcome to our Needs/Wants/Savings calculator! Below enter your monthly bills following the prompts, and if something is not applicable to you, fill in 0. Leave nothing blank! Only enter numerical digits (ex: 100)</h4>
+        <br>
+      </div>
+      <form method="post" action="/results">
+          <div class="calculator-head" id=special>
+          <h2 class="prompt">What is your monthly income?</h2>
+          <form action="/results">
+              <input class="calc-question" type="text" name="income" placeholder="Enter your monthly income." required/>
+          </div>
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col">
+            <h3 class="prompt">Needs:</h3>
+              <input class="calc-question" type="text" name="rent" placeholder="Enter your monthly housing payment." required/>
+            <br>
+            <br>
+              <input class="calc-question" type="text" name="groceries" placeholder="Enter your grocery bill." required/>
+            <br>
+            <br>
+              <input class="calc-question" type="text" name="utilities" placeholder="Enter your utility bill." required/>
+            <br>
+            <br>
+              <input class="calc-question" type="text" name="healthcare" placeholder="Enter your healthcare bill." required/>
+            <br>
+            <br>
+          <input class="calc-question" type=transportation name="transportation" placeholder="Enter your transportation bill." required/>
+            <br>
+            <br>
+              <input class="calc-question" type="text" name="debt" placeholder="Enter your debt bill (if any)." required/>
+            <br>
+            <br>
+          </div>
+          <div class="col">
+            <h3 class="prompt">Wants:</h3>
+
+              <input class="calc-question" type="text" name="entertainment" placeholder="Enter your entertainment bill." required/>
+            <br>
+            <br>
+              <input class="calc-question" type="text" name="splurges" placeholder="Enter your estimated splurges." required/>
+              <br>
+            <br>
+              <input class="calc-question" type="text" name="goingout" placeholder="Enter what you spend going out." required/>
+              <br>
+            <br>
+              <input class="calc-question" type="text" name="other" placeholder="Enter any other expenses." required/>
+              <br>
+            <br>  
+          </div>
+          <div class="col">
+            <h3 class="prompt">Savings:</h3>
+            
+              <input class="calc-question" type="text" name="efund" placeholder="Enter your emergency fund money." required/>
+             <br>
+            <br>
+              <input class="calc-question" type="text" name="retirement" placeholder="Enter what you put toward retirement." required/>
+              <br>
+            <br>
+              <input class="calc-question" type="text" name="other-sav" placeholder="Enter any other savings." required/>
+            <br>
+            <br>
+              <input class="submit "type="submit" value="Submit"/>  
+          </div>
+
+        </div>
+        </form>
+      </div>
+  <!-- Image code -->      
+<img class = "gif" src="static/videos/confused-math-formula-calculation-xnm9qnnhjh9vg552.gif" alt="Man calculating with his fingers" style="width:224px;height:125px;float:right">
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+    <div class="footer">
+    ©2023 Faith, Jerson, Nooraan, Youssra. All Rights Reserved.
+    </div>
+
+        
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    </body>
+</html>

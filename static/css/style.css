@@ -1,0 +1,236 @@
+/*color scheme:
+bbb193 - tan
+f6f0ed - cream
+7ea8be - light blue
+1e555c - dark turquoise
+c2948a - dusty pink
+*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:wght@300&family=Playfair+Display:wght@600&family=Press+Start+2P&display=swap');
+
+
+#first_title{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: #1e555c;
+  font-weight: bold;
+}
+.index-page{
+  background-color: #dacdaf;
+  font-family: monospace;
+}
+
+
+
+.calc-question {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  width: 300px;
+}
+
+/*Navigation Bar/ Footer*/
+/* .navbar-index{
+  background-color: #7ea8be;
+  color:#f6f0ed;
+  display: inline-block;
+  padding: 14px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center; 
+}
+a.navbar-index:hover {
+  background-color: #f6f0ed;
+  color: #7ea8be;
+}
+ */
+.footer{
+  background-color: #7ea8be;
+  position: relative;
+  padding: 2em;
+  margin-top: auto;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Button*/
+.Button{
+  background-color: #1e555c;
+  color: white;
+  width: 270px;
+  font-color: white;
+  font-size: 33px;
+  height: 70px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  margin-top: 8.5em;
+  margin-left: 0em;
+  padding-top: 8px;
+}
+
+.gif{
+  margin-bottom: 5em;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* experimenting on the calc page!!*/
+
+.calc-page {
+  
+  background-color: #dacdaf;
+  text-align: left;
+  font-family: monospace;
+}
+
+.prompt {
+  color: #1e555c;
+}
+
+#calc-title {
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.navbar-calc {
+  background-color: #f6f0ed;
+  color: #1e555c;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+a.navbar-calc:hover {
+  background-color: #c2948a;
+  color: #f6f0ed;
+}
+
+.calculator-head {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #bbb193;
+}
+
+#special {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.submit {
+  background-color: #c2948a;
+  width: 100px;
+  font-size: 20px;
+}
+
+/* results page */
+
+#res-title {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.results-page {
+    
+  background-color: #dacdaf;
+  text-align: left;
+  font-family: monospace;
+}
+
+.res-head {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  background-color: #bbb193;
+}
+
+#button-res {
+  background-color: #c2948a;
+  color: white;
+  font-color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 60%;
+  margin-top: 32%
+  
+}
+
+#table-title {
+  color: #1e555c;
+}
+
+/* Social Good Page */
+
+.socialgood-page{
+  background-color: #dacdaf;
+  font-family: monospace;
+}
+
+.soc-link {
+  color: black;
+}
+
+#pig-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+}
+
+#suggestion {
+  text-align: center;
+}
+
+/* About Us Page*/
+.about-page{
+  background-color: #dacdaf;
+  font-family:monospace;
+}
+
+.aboutus{
+  font-family: 'Press Start 2P', cursive;
+}
+
+.abt-us {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+

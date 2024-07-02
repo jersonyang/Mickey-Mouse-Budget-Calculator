@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+      <!-- import bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body class="results-page">
+   <!---Navigation bar --->
+   <nav class="navbar-calc">
+     <a class="navbar-calc" href="/index">Home</a>
+     <a class="navbar-calc" href="/calc">Calculator</a>
+     <a class="navbar-calc" href="/results">Results (you are here)</a>
+     <a class="navbar-calc" href="/socialgood">Social Good</a>
+     <a class="navbar-calc" href="/about">About</a>
+   </nav>
+    <!-- End of nav bar -->
+
+        <div class="res-head">
+          <h1 class="results" id="res-title">Results</h1>
+          <h4 class="results">Thank you for using our calculator!</h4>
+          
+          <br>
+          <br>
+        </div>
+      <br>
+      <br>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3></h3>
+            </div>
+            <div class="col">
+              <h3 id="table-title">Suggested Balance</h3>
+            </div>
+            <div class="col">
+              <h3 id="table-title">Actual Balance</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3 id="table-title">Needs</h3>
+            </div>
+            <div class="col">
+              <h3>{{ needs_suggestion }}</h3>
+            </div>
+            <div class="col">
+              <h3>{{ sum_of_needs }}</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3 id="table-title">Wants</h3>
+            </div>
+            <div class="col">
+              <h3>{{ wants_suggestion }}</h3>
+            </div>
+            <div class="col">
+              <h3>{{ sum_of_wants }}</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3 id="table-title">Savings</h3>
+            </div>
+            <div class="col">
+              <h3>{{ savings_suggestion }}</h3>
+            </div>
+            <div class="col">
+              <h3>{{ sum_of_savings }}</h3>
+            </div>
+          </div>
+        </div>
+ 
+      <br>
+      <br>
+      <br>
+        <div class="container"> 
+          
+          <h3> {{ return_statement }} </h3>
+          <br>
+          <br>
+          <br>
+        </div>
+
+    <!-- Button code -->    
+        
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="/socialgood" class="button" id="button-res"><span>Get Started!</span></a>
+    </div>
+    
+      
+<div class="footer">
+    ©2023 Faith, Jerson, Nooraan, Youssra. All Rights Reserved.
+  </div>
+      
+  </body>
+</html>
