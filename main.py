@@ -39,17 +39,17 @@ app = Flask(__name__)
 
 # INDEX
 @app.route('/')
-@app.route('/index')
+@app.route('/templates/index.html')
 def index():
-  return render_template('index.html')
+  return render_template('/templates/index.html')
 
 
 
-@app.route('/calc')
+@app.route('/templates/calc.html')
 def calc():
-  return render_template('calc.html')
+  return render_template('/templates/calc.html')
 
-@app.route('/results', methods=['POST'])
+@app.route('/templates/results.html', methods=['POST'])
 def results():
   income = float(request.form.get('income'))
 
@@ -97,11 +97,11 @@ def results():
     return_statement += "\nCongratulations! Your budget is perfectly balanced. \n\nLook at ways you can do social good by checking out ways to contribute to a cause of your choice without disrupting your income!"
 
   
-  return render_template('results.html', return_statement = return_statement, needs_suggestion = needs_suggestion, wants_suggestion = wants_suggestion, savings_suggestion = savings_suggestion, sum_of_needs = sum_of_needs, sum_of_wants = sum_of_wants, sum_of_savings = sum_of_savings)
+  return render_template('/templates/results.html', return_statement = return_statement, needs_suggestion = needs_suggestion, wants_suggestion = wants_suggestion, savings_suggestion = savings_suggestion, sum_of_needs = sum_of_needs, sum_of_wants = sum_of_wants, sum_of_savings = sum_of_savings)
 
 
 
-@app.route('/socialgood')
+@app.route('/templates/socialgood.html')
 def socialgood():
   sum_of_needs = 100
   needs_suggestion = 500
@@ -111,11 +111,11 @@ def socialgood():
   if sum_of_needs > needs_suggestion:
     socgood = "We suggest: No Money Required!"
     
-  return render_template('socialgood.html', socgood = socgood)
+  return render_template('/templates/socialgood.html', socgood = socgood)
 
-@app.route('/about')
+@app.route('/templates/about.html')
 def about():
-  return render_template('about.html')
+  return render_template('/templates/about.html')
 
 
 
