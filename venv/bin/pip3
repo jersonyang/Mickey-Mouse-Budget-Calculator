@@ -1,4 +1,6 @@
-#!/home/runner/Python/venv/bin/python3
+#!/bin/sh
+'''exec' "/Users/jersonyang/Downloads/Code/Outside Coding Projects/Fintech Focus 2023/SavingsNeedsWants-Budget-Calculator/venv/bin/python3.11" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

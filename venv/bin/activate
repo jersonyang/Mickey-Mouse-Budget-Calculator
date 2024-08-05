@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/runner/Python/venv"
+VIRTUAL_ENV="/Users/jersonyang/Downloads/Code/Outside Coding Projects/Fintech Focus 2023/SavingsNeedsWants-Budget-Calculator/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
